@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SEPE BS BINGO</title>
+    <script src="https://unpkg.com/akar-icons-fonts"></script>
+    <link rel="stylesheet" href="./output.css">
+</head>
+
+<body>
+
+    <body class="flex flex-1 justify-center content-center">
+        <div id="onlinePlayers" class="absolute right-0 top-0 m-4 text-neutral-400">
+            [Loading...]
+        </div>
+        <div class="relative p-5">
+            <div class="flex flex-1 flex-col content-center mb-10">
+                <h1 class="text-4xl font-extrabold siemens-green text-center">SEPE Dozenten</h1>
+                <h1 class="text-4xl font-extrabold siemens-purple text-center">Bullshit Bingo</h1>
+            </div>
+            <div class="grid grid-flow-row grid-cols-5 grid-rows-5 siemens-purple text-base font-medium columns-xs relative overflow-hidden">
+                <div id="bingoCardElement1"
+                    class="aspect-square cursor-pointer relative border rounded-tl-lg p-2 flex flex-1 justify-center items-center w-full bingoCardItem">
+                    <p class="pointer-events-none text-center text-wrap h-min">Verklascht</p>
+                </div>
+
+                <div id="bingoCardElement2"
+                    class="aspect-square cursor-pointer relative border p-2 flex flex-1 justify-center items-center w-full bingoCardItem bingoCardItem">
+                    <p class="pointer-events-none text-center text-wrap h-min">Kann nicht<br>erklären</p>
+                </div>
+
+                <div id="bingoCardElement3"
+                    class="aspect-square cursor-pointer relative border p-2 flex flex-1 justify-center items-center w-full bingoCardItem">
+                    <p class="pointer-events-none text-center text-wrap h-min">Geiert<br>(guckt hinterher)</p>
+                </div>
+
+                <div id="bingoCardElement4"
+                    class="aspect-square cursor-pointer relative border p-2 flex flex-1 justify-center items-center w-full bingoCardItem">
+                    <p class="pointer-events-none text-center text-wrap h-min">Macht komische<br>Laute</p>
+                </div>
+
+                <div id="bingoCardElement5"
+                    class="aspect-square cursor-pointer relative border p-2 flex flex-1 rounded-tr-lg justify-center items-center w-full bingoCardItem">
+                    <p class="pointer-events-none text-center text-wrap h-min">Schlaftablette</p>
+                </div>
+
+                <div id="bingoCardElement6"
+                    class="aspect-square cursor-pointer relative border p-2 flex flex-1 justify-center items-center w-full bingoCardItem">
+                    <p class="pointer-events-none text-center text-wrap h-min">Beleidigt Schüler</p>
+                </div>
+
+                <div id="bingoCardElement7"
+                    class="aspect-square cursor-pointer relative border p-2 flex flex-1 justify-center items-center w-full bingoCardItem">
+                    <p class="pointer-events-none text-center text-wrap h-min">Sexismus</p>
+                </div>
+
+                <div id="bingoCardElement8"
+                    class="aspect-square cursor-pointer relative border p-2 flex flex-1 justify-center items-center w-full bingoCardItem">
+                    <p class="pointer-events-none text-center text-nowrap">N-Wort</p>
+                </div>
+
+                <div id="bingoCardElement9"
+                    class="aspect-square cursor-pointer relative border p-2 flex flex-1 justify-center items-center w-full bingoCardItem">
+                    <p class="pointer-events-none text-center text-wrap h-min">Boomer Humor</p>
+                </div>
+
+                <div id="bingoCardElement10"
+                    class="aspect-square cursor-pointer relative border p-2 flex flex-1 justify-center items-center w-full bingoCardItem">
+                    <p class="pointer-events-none text-center text-wrap h-min">Zu hohe<br>Erwartungen</p>
+                </div>
+
+                <div id="bingoCardElement11"
+                    class="aspect-square cursor-pointer relative border p-2 flex flex-1 justify-center items-center w-full bingoCardItem">
+                    <p class="pointer-events-none text-center text-wrap h-min">Erzählt seine<br />Lebensgeschichte</p>
+                </div>
+
+                <div id="bingoCardElement12"
+                    class="aspect-square cursor-pointer relative border p-2 flex flex-1 justify-center items-center w-full bingoCardItem">
+                    <p class="pointer-events-none text-center text-wrap h-min">Anderer<br>Rassismus</p>
+                </div>
+
+                <div id="bingoCardElement13"
+                    class="aspect-square cursor-pointer relative border p-2 flex flex-1 justify-center items-center w-full bingoCardItem">
+                    <i class="ai-star text-7xl"></i>
+                </div>
+
+                <div id="bingoCardElement14"
+                    class="aspect-square cursor-pointer relative border p-2 flex flex-1 justify-center items-center w-full bingoCardItem">
+                    <p class="pointer-events-none text-center text-wrap h-min">60+</p>
+                </div>
+
+                <div id="bingoCardElement15"
+                    class="aspect-square cursor-pointer relative border p-2 flex flex-1 justify-center items-center w-full bingoCardItem">
+                    <p class="pointer-events-none text-center text-wrap h-min">Nuschelt</p>
+                </div>
+
+                <div id="bingoCardElement16"
+                    class="aspect-square cursor-pointer relative border p-2 flex flex-1 justify-center items-center w-full bingoCardItem">
+                    <p class="pointer-events-none text-center text-wrap h-min">2+ Tage krank</p>
+                </div>
+
+                <div id="bingoCardElement17"
+                    class="aspect-square cursor-pointer relative border p-2 flex flex-1 justify-center items-center w-full bingoCardItem">
+                    <p class="pointer-events-none text-center text-wrap h-min">Weg für 20+ min</p>
+                </div>
+
+                <div id="bingoCardElement18"
+                    class="aspect-square cursor-pointer relative border p-2 flex flex-1 justify-center items-center w-full bingoCardItem">
+                    <p class="pointer-events-none text-center text-wrap h-min">technische<br>Probleme</p>
+                </div>
+
+                <div id="bingoCardElement19"
+                    class="aspect-square cursor-pointer relative border p-2 flex flex-1 justify-center items-center w-full bingoCardItem">
+                    <p class="pointer-events-none text-center text-wrap h-min">Kommt 5+ min<br>zu spät</p>
+                </div>
+
+                <div id="bingoCardElement20"
+                    class="aspect-square cursor-pointer relative border p-2 flex flex-1 justify-center items-center w-full bingoCardItem">
+                    <p class="pointer-events-none text-center text-wrap h-min">unlustige Witze</p>
+                </div>
+
+                <div id="bingoCardElement21"
+                    class="aspect-square cursor-pointer relative border p-2 flex flex-1 rounded-bl-lg justify-center items-center w-full bingoCardItem">
+                    <p class="pointer-events-none text-center text-wrap h-min">Hilft nicht<br>richtig</p>
+                </div>
+
+                <div id="bingoCardElement22"
+                    class="aspect-square cursor-pointer relative border p-2 flex flex-1 justify-center items-center w-full bingoCardItem">
+                    <p class="pointer-events-none text-center text-wrap h-min">5+ Tassen Kaffee<br>pro Tag</p>
+                </div>
+
+                <div id="bingoCardElement23"
+                    class="aspect-square cursor-pointer relative border p-2 flex flex-1 justify-center items-center w-full bingoCardItem">
+                    <p class="pointer-events-none text-center text-wrap h-min">scheißegal<br>Einstellung</p>
+                </div>
+
+                <div id="bingoCardElement24"
+                    class="aspect-square cursor-pointer relative border p-2 flex flex-1 justify-center items-center w-full bingoCardItem">
+                    <p class="pointer-events-none text-center text-wrap h-min">Spricht Namen<br>falsch
+                        aus<br>(dauerhaft)
+                    </p>
+                </div>
+                <div id="bingoCardElement25"
+                    class="aspect-square cursor-pointer relative border p-2 flex flex-1 justify-center items-center w-full bingoCardItem rounded-br-lg">
+                    <p class="pointer-events-none text-center text-wrap h-min">NS Anspielung</p>
+                </div>
+            </div>
+        </div>
+    </body>
+</body>
+<script src="https://cdn.socket.io/4.7.5/socket.io.min.js"></script>
+<script>
+    // Create websocket and handle events
+    const socket = io();
+
+    // Server game data variables
+    var clientsConnected = 0;
+    var isBingo = false;
+    var bingoIndex = [];
+    var finalFields = [];
+    var voteFields = [];
+    var requiredPeople = 3;
+
+    // Client game data variables
+    var selectedField = null;
+
+    // Adding to all bingo fields an EventListener
+    for (let i = 1; i < 26; i++) {
+        if(i == 13) i++;
+        document.getElementById(`bingoCardElement${i}`).addEventListener('click', () => { fieldSelectHandler(i) })
+    }
+
+    // SOCKET FUNCTIONS
+
+    socket.on('alreadyConnected', () => {
+        alert("Du bist bereits verbunden in einem anderen Tab oder Browser")
+    });
+    
+    socket.on('serverDataUpdate', (data) => {
+        clientsConnected = data.connectedClients;
+        finalFields = data.finalFields;
+        requiredPeople = data.requiredPeople;
+        voteFields = [];
+        isBingo = data.isBingo;
+        bingoIndex = data.bingoIndex;
+        data.clientVoteSelectedFields.forEach((element) => {
+            voteFields.push(element)
+        });
+        console.log(data)
+        updateOnlinePlayers();
+        updateVotes();
+        updateFinalFields();
+        bingoFinishHandler();
+    });
+    
+    // Handling the selecting and deselecting of fields - WORKS
+    function fieldSelectHandler(fieldNum) {
+        if(finalFields.includes(fieldNum) || fieldNum == 13) return;
+        if(selectedField == fieldNum) {
+            selectedField = null;
+        } else {
+            selectedField = fieldNum;
+        }
+        socket.emit('clientDataUpdate', selectedField)
+        updateVotes();
+    }
+    
+    // END SOCKET FUNCTIONS
+    
+    // Updates, creates and deletes votes visually
+    function updateVotes() {
+        for(let i=1; i < 26; i++) {
+            if(document.getElementById(`voteElement${i}`) != null) {
+                document.getElementById(`voteElement${i}`).remove();
+            }
+        }
+        if (voteFields.length > 0) {
+            voteFields.forEach((element) => {
+                if(element.count > 0) {
+                    document.getElementById(`bingoCardElement${element.field}`).innerHTML += `<div id="voteElement${element.field}" class="absolute right-0 top-0 p-2 siemens-green"><i class="ai-person"></i> ${element.count} / ${requiredPeople}</div>`
+                } else if(document.getElementById(`voteElement${element.field}`) != undefined) {
+                    document.getElementById(`voteElement${element.field}`).remove();
+                }
+            });
+        }
+    }
+
+    function updateOnlinePlayers() {
+        if(clientsConnected < 2) {
+            document.getElementById('onlinePlayers').innerHTML = "Keine anderen Spieler verbunden"
+        } else {
+            document.getElementById('onlinePlayers').innerHTML = `${clientsConnected} Spieler verbunden`
+        }
+    }
+
+    function updateFinalFields() {
+        for(let i = 1; i < 26; i++) {
+            if(document.getElementById(`finishedField${i}`) != null) {
+                document.getElementById(`finishedField${i}`).remove();
+            }
+        }
+        finalFields.forEach((element) => {
+            document.getElementById(`bingoCardElement${element}`).style.cursor = "not-allowed"
+            document.getElementById(`bingoCardElement${element}`).innerHTML += `<div id="finishedField${element}" class="finishedField absolute"><i class="ai-cross text-red-500 text-8xl"></i></div>`
+        });
+    }
+
+    function bingoFinishHandler() {
+        for(let i = 0; i < 25; i++) {
+            document.getElementById(`bingoLine${i}`).remove()
+        }
+        let bingoCombinations = [
+            [1,2,3,4,5],
+            [6,7,8,9,10],
+            [11,12,13,14,15],
+            [16,17,18,19,20],
+            [21,22,23,24,25],
+            [1,6,11,16,21],
+            [2,7,12,17,22],
+            [3,8,13,18,23],
+            [4,9,14,19,24],
+            [5,10,15,20,25],
+            [1,7,13,19,25],
+            [5,9,13,17,21]
+        ]
+        if(isBingo) {
+            bingoIndex.forEach((combination) => {
+                bingoCombinations[combination].forEach((element) => {
+                if(combination < 5) {
+                    console.log("<5")
+                    document.getElementById(`bingoCardElement${element}`).innerHTML += `<div id="bingoLine${element}" class="absolute left-1/2 -translate-x-1/2 h-2 w-full z-10 bg-red-500"></div>`
+                } 
+                if(5 <= combination && combination < 10) {
+                    console.log("5 >= <10")
+                    document.getElementById(`bingoCardElement${element}`).innerHTML += `<div id="bingoLine${element}" class="absolute top-1/2 -translate-y-1/2 w-2 h-full z-10 bg-red-500"></div>`
+                } 
+                if (combination == 10) {
+                    console.log("=10")
+                    document.getElementById(`bingoCardElement${element}`).innerHTML += `<div id="bingoLine${element}" class="absolute left-1/2 -translate-x-1/2 -rotate-45 w-2 h-dvh z-10 bg-red-500"></div>`
+                } 
+                if (combination == 11) {
+                    console.log("=11")
+                    document.getElementById(`bingoCardElement${element}`).innerHTML += `<div id="bingoLine${element}" class="absolute left-1/2 -translate-x-1/2 rotate-45 w-2 h-dvh z-10 bg-red-500"></div>`
+                }
+            });
+            });
+        }
+    }
+    
+    socket.on("disconnect", () => {
+        alert("Verbindungsverlust, bitte Seite neuladen")
+    });
+</script>
+
+</html>
